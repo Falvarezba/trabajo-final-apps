@@ -15,10 +15,7 @@ const routes: Routes = [
     path: 'producto/:nombre',
     loadChildren: () => import('./pages/detalle-producto/detalle-producto.module').then( m => m.DetalleProductoPageModule)
   },
-  {
-    path: 'seleccionar-auto',
-    loadChildren: () => import('./pages/seleccionar-auto/seleccionar-auto.module').then( m => m.SeleccionarAutoPageModule)
-  }
+  
   
 ];
 @NgModule({
