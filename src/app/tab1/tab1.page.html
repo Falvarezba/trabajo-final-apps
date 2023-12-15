@@ -1,19 +1,19 @@
-<ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      MENU
-    </ion-title>
-  </ion-toolbar>
-</ion-header>
-
+<!-- search.component.html -->
 <ion-content [fullscreen]="true">
   <section>
-    <a *ngFor="let item of categorias"
-    [ngStyle]="{ 'background-image': 'url('+item.fotoUrl+')'}"
-    [routerLink]="['/categorias' , item.nombre]" >
-     
-    <span>{{item.nombre}}</span>
-    
-  </a>
+    <a *ngFor="let item of categorias" [routerLink]="['/categorias', item.nombre]">
+      <div class="categoria-item" 
+          
+           [ngClass]="{
+             'categoria-suv': item.nombre  === 'SUV',
+             'categoria-sedanes': item.nombre === 'Sedanes',
+             'categoria-hatchback': item.nombre === 'Hatchback',
+             'categoria-cabriolet': item.nombre === 'Cabriolet'
+           }">
+        <span>{{ item.nombre }}</span>
+        <img [src]="item.fotoUrl" alt="{{ item.nombre }}">
+      </div>
+    </a>
   </section>
 </ion-content>
+

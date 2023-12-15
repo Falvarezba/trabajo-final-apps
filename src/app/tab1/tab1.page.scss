@@ -33,5 +33,37 @@ ion-img {
     height: 150px;
     object-fit: cover;
     
-  }
+}
+.categoria-item {
+    /* Estilos generales para todos los elementos .categoria-item */
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+  
+
+.categoria-suv {
+    /* Estilos específicos para la categoría SUV */
+    border: 2px solid blue;
+}
+  
+.categoria-sedanes {
+    /* Estilos específicos para la categoría Sedanes */
+    border: 2px solid green;
+}
+  
+.categoria-hatchback {
+    /* Estilos específicos para la categoría Hatchback */
+    border: 2px solid orange;
+}
+  
+.categoria-cabriolet {
+    /* Estilos específicos para la categoría Cabriolet */
+    border: 2px solid red;
+}
+
+  
+
+
+  
 
