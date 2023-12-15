@@ -1,9 +1,17 @@
 <!-- search.component.html -->
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title size="large" class="titulo">
+      Menu
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
 <ion-content [fullscreen]="true">
   <section>
     <a *ngFor="let item of categorias" [routerLink]="['/categorias', item.nombre]">
       <div class="categoria-item" 
-          
+            
            [ngClass]="{
              'categoria-suv': item.nombre  === 'SUV',
              'categoria-sedanes': item.nombre === 'Sedanes',
